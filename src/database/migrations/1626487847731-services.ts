@@ -18,7 +18,18 @@ export class services1626487847731 implements MigrationInterface {
                         name: 'id_pro',
                         type: 'varchar',
                     }   
-                ]
+                ],
+                foreignKeys: [
+                    {
+                        name: 'profesionalId',
+                        columnNames: ['id_pro'],
+                        referencedTableName: 'professional',
+                        referencedColumnNames: ['id'],
+                        onUpdate: 'CASCADE',
+                        onDelete: 'SET NULL',
+                    },
+                
+                ],
             })
         );
     }

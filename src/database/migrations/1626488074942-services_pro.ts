@@ -75,7 +75,7 @@ export class servicesPro1626488074942 implements MigrationInterface {
           }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropTable('services');
+        await queryRunner.dropTable('services_pro');
     }
 
 
