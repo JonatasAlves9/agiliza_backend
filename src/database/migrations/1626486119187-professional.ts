@@ -8,9 +8,15 @@ export class professional1626486119187 implements MigrationInterface {
               name: 'professional',
               columns: [
                 {
-                  name: 'id_user',
+                  name: 'id',
                   type: 'varchar',
                   isPrimary: true,
+                  generationStrategy: 'uuid',
+                  default: 'uuid_generate_v4()',
+                },
+                {
+                  name: 'id_user',
+                  type: 'varchar',
                 },
                 {
                   name: 'id_profission',
