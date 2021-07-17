@@ -26,6 +26,11 @@ export class users1626387856745 implements MigrationInterface {
                   isUnique: true,
                 },
                 {
+                    name: 'url_image',
+                    type: 'varchar',
+                    isNullable: false,
+                },
+                {
                   name: 'cellphone',
                   type: 'varchar',
                   isNullable: false,
@@ -55,7 +60,6 @@ export class users1626387856745 implements MigrationInterface {
           );
         }
       
-
     public async down(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.dropTable('users');
     }
