@@ -11,6 +11,8 @@ export class addressUsers1626392164809 implements MigrationInterface {
                   name: 'id',
                   type: 'varchar',
                   isPrimary: true,
+                  generationStrategy: 'uuid',
+                  default: 'uuid_generate_v4()',
                 },
                 {
                   name: 'id_user',
