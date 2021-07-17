@@ -32,7 +32,7 @@ export class profission1626485697690 implements MigrationInterface {
       
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropTable('professional');
+        await queryRunner.dropTable('profissions');
     }
 
 }
