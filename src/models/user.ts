@@ -18,23 +18,46 @@ class User {
     email: string;
 
     @Column()
-    url_image: boolean;
-
-    @Column()
-    cellphone: Date;
-
-    @Column()
     password: string;
 
     @Column()
-    type: string;
+    phone: string;
+
+    @Column()
+    about: string;
+
+    @Column()
+    resume: string;
+
+    @Column()
+    avatar: string;
+
+    @Column()
+    cover: string;
+
+    @Column()
+    perms: string;
+
+    @Column()
+    city_id: number; 
+
+    @Column()
+    plan_id: number;
+
+    @Column()
+    views: number;
+
+    @Column()
+    token: string;
+
+    @Column()
+    created_ip: string;
 
     @CreateDateColumn()
     createdAt: Date;
 
     @UpdateDateColumn()
     updatedAt: Date;
-
 }
 
 export default User;
