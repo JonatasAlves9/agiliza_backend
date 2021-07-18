@@ -6,7 +6,7 @@ import {
 } from 'typeorm';
 
 @Entity('services')
-class User {
+class Service {
     @PrimaryGeneratedColumn()
     id: number;
 
@@ -36,4 +36,4 @@ class User {
 
 }
 
-export default User;
+export default Service;
