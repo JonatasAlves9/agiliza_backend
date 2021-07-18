@@ -31,7 +31,7 @@ servicesRouter.post('/create', async (request, response) => {
         await RepositoryService.save(service);
     
         return response.json({
-            category: service,
+            service: service,
             success: true,
             message: 'Serviço adicionado com sucesso.'
         });
